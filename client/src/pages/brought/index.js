@@ -63,7 +63,7 @@ const Brought = () => {
         </Affix>
         <span className={classes.subtitle}>Bought Course List</span>
         <div className={classes.cardContainer}>
-            {bought.length === 0 ? bought.map(item => {
+            {bought.length > 0 ? bought.map(item => {
                 return <div key={item.id} className={classes.courseCard}>
                     <div className={classes.topBar}>
                         <span className={classes.title}>{item.title}</span>
